@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Section</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Contact Section */
+.contact {
+    background-color: #0d0742;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+    height: 100vh;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contact h2 span {
+    color: #f9bc30;
+}
+
+.contact .subtitle {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.contact .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.contact-info {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-info i {
+    color: #f9bc30;
+    font-size: 1.2rem;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #f9bc30;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.back-to-top {
+    display: inline-block;
+    margin-top: 30px;
+    color: #fff;
+    background-color: #f9bc30;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: #fff;
+    color: #0d0742;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 2rem;
+    }
+
+    .contact .description {
+        font-size: 0.9rem;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact {
+        padding: 30px 10px;
+    }
+
+    .contact h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact .description {
+        font-size: 0.8rem;
+    }
+}
+
+</style>
+</head>
+<body>
+    <section class="contact">
+        <div class="container">
+            <h2>Contact <span>Me</span></h2>
+            <p class="subtitle">Let's work together</p>
+            <p class="description">
+                I am glad you've visited my personal portfolio website. 
+                If you have any questions, suggestions, or would like to collaborate, 
+                please feel free to contact me through this form.
+            </p>
+            <div class="contact-info">
+                <p>
+                    <i class="fa-solid fa-paper-plane"></i> JapaanTeach@gmail.com
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i> +252 0906808667
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <!--a href="#"><i class="fab fa-whatsapp"></i></!--a-->
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </a>
+    </section>
+</body>
+</html>

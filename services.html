@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<style>
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0742;
+    color: #fff;
+}
+
+/* Services Section */
+.services-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0d0742;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.services-section h2 span {
+    color: #f9bc30;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #f9bc30;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card .icon {
+    font-size: 2.5rem;
+    color: #0d0742;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0d0742;
+}
+
+.service-card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #0d0742;
+}
+
+.service-card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #f9bc30;
+    background-color: #0d0742;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.service-card .btn:hover {
+    background-color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-section h2 {
+        font-size: 2rem;
+    }
+
+    .service-card {
+        width: 90%;
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+    }
+}
+</style>
+<body>
+    <section class="services-section">
+        <h2>My <span>services</span></h2>
+        <div class="services-container">
+            <div class="service-card">
+                <div class="icon">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <h3>Graphi Design</h3>
+                <p>I provide creative graphic design services</p>
+                <a href="#" class="btn">Contact Me</a>
+            </div>
+            <div class="service-card">
+                <div class="icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>I provide Professional UI/UX design services</p>
+                <a href="#" class="btn">Contact Me</a>
+            </div>
+            <div class="service-card">
+                <div class="icon">
+                    <i class="fa-solid fa-adobe"></i>
+                </div>
+                <h3>Veido Eiditing</h3>
+                <p>I provide Professional Veido Eiditing services</p>
+                <a href="#" class="btn">Contact Me</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
